@@ -1,0 +1,107 @@
+{
+  "id": "7fad8df4-a4d5-4c3a-8e14-ea54d129de89",
+  "version": "2.0",
+  "name": "Teste-pagina correios-CEP",
+  "url": "https://buscacepinter.correios.com.br",
+  "tests": [{
+    "id": "9c4974bc-3fa1-4bdf-b7c6-7cbd87574861",
+    "name": "pag-cep-correios",
+    "commands": [{
+      "id": "d87553fb-9c68-42bb-9ed3-c602ac5d5743",
+      "comment": "",
+      "command": "open",
+      "target": "/app/endereco/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da3756a3-f955-49a3-82d8-2c943911488e",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1036x792",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7dca0607-1bd7-442b-8178-93af53f74b62",
+      "comment": "",
+      "command": "type",
+      "target": "id=endereco",
+      "targets": [
+        ["id=endereco", "id"],
+        ["name=endereco", "name"],
+        ["css=#endereco", "css:finder"],
+        ["xpath=//input[@id='endereco']", "xpath:attributes"],
+        ["xpath=//section[@id='inicioConteudo']/div/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "69053100"
+    }, {
+      "id": "03a8a9cf-fbe3-4ae5-9481-9d7cda5d7f38",
+      "comment": "",
+      "command": "click",
+      "target": "id=btn_pesquisar",
+      "targets": [
+        ["id=btn_pesquisar", "id"],
+        ["name=btn_pesquisar", "name"],
+        ["css=#btn_pesquisar", "css:finder"],
+        ["xpath=//button[@id='btn_pesquisar']", "xpath:attributes"],
+        ["xpath=//section[@id='inicioConteudo']/div[3]/div/div/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Buscar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ea746d95-7882-421d-8524-fbabfb9d0274",
+      "comment": "",
+      "command": "click",
+      "target": "css=td:nth-child(1)",
+      "targets": [
+        ["css=td:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='resultado-DNEC']/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Rua Rio Iça')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "bff61b5a-7734-4ad7-bba9-746d294e06eb",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=td:nth-child(1)",
+      "targets": [
+        ["css=td:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='resultado-DNEC']/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Rua Rio Iça')]", "xpath:innerText"]
+      ],
+      "value": "Rua Rio Iça"
+    }, {
+      "id": "1bf57d54-995e-4da7-830a-d3401040372d",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=td:nth-child(1)",
+      "targets": [
+        ["css=td:nth-child(1)", "css:finder"],
+        ["xpath=//table[@id='resultado-DNEC']/tbody/tr/td", "xpath:idRelative"],
+        ["xpath=//td", "xpath:position"],
+        ["xpath=//td[contains(.,'Rua Rio Iça')]", "xpath:innerText"]
+      ],
+      "value": "Rua Rio Iça"
+    }, {
+      "id": "d607808a-9974-4a65-9caa-45aae7ea5e28",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "ec74600c-fa99-43ad-aaa0-2400f657c32a",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9c4974bc-3fa1-4bdf-b7c6-7cbd87574861"]
+  }],
+  "urls": ["https://buscacepinter.correios.com.br/"],
+  "plugins": []
+}

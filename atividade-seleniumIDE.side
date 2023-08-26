@@ -1,0 +1,197 @@
+{
+  "id": "86b7b66b-430d-4cfe-a92e-7700aeecca81",
+  "version": "2.0",
+  "name": "atividade-seleniumIDE",
+  "url": "http://publicazo.insprak.com/",
+  "tests": [{
+    "id": "ed34572c-ec64-43b6-bec3-fcc8e4ab2200",
+    "name": "TC01",
+    "commands": [{
+      "id": "bd825bb9-5fed-4c7f-a4d6-36ec12286cba",
+      "comment": "",
+      "command": "open",
+      "target": "http://publicazo.insprak.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89bb9e64-a709-456d-aac0-99920c33efd9",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1036x792",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5359cdcf-1296-4dbd-97b7-e69be74962e9",
+      "comment": "",
+      "command": "click",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=search", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64a04bff-c4d5-4cd0-aee9-fb6e348d7eb4",
+      "comment": "",
+      "command": "type",
+      "target": "id=search",
+      "targets": [
+        ["id=search", "id"],
+        ["name=search", "name"],
+        ["css=#search", "css:finder"],
+        ["xpath=//input[@id='search']", "xpath:attributes"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "teste"
+    }, {
+      "id": "63018fed-3392-436a-aef9-ad3f1349b50a",
+      "comment": "",
+      "command": "click",
+      "target": "name=commit",
+      "targets": [
+        ["name=commit", "name"],
+        ["css=.btn", "css:finder"],
+        ["xpath=//input[@name='commit']", "xpath:attributes"],
+        ["xpath=//div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "57f862b5-bc82-48e6-becc-f86445293493",
+      "comment": "",
+      "command": "click",
+      "target": "css=.col-md-4:nth-child(1) .panel-body",
+      "targets": [
+        ["css=.col-md-4:nth-child(1) .panel-body", "css:finder"],
+        ["xpath=//div[@id='service_listing']/div/div/div[2]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "da68e3f3-94e4-4751-a614-54983cc6a6bb",
+      "comment": "",
+      "command": "verifyText",
+      "target": "linkText=Aulas de Teste de Software",
+      "targets": [
+        ["linkText=Aulas de Teste de Software", "linkText"],
+        ["css=.col-md-4:nth-child(1) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Aulas de Teste de Software')]", "xpath:link"],
+        ["xpath=//div[@id='service_listing']/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/services/1')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Aulas de Teste de Software')]", "xpath:innerText"]
+      ],
+      "value": "Aulas de Teste de Software"
+    }, {
+      "id": "1080eee0-366e-4667-8867-dd0dd1505564",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Aulas de Teste de Software",
+      "targets": [
+        ["linkText=Aulas de Teste de Software", "linkText"],
+        ["css=.col-md-4:nth-child(1) a", "css:finder"],
+        ["xpath=//a[contains(text(),'Aulas de Teste de Software')]", "xpath:link"],
+        ["xpath=//div[@id='service_listing']/div/div/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/services/1')]", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Aulas de Teste de Software')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "41c1f537-ec06-444d-954a-36506b514c5f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.row:nth-child(1) > .col-md-8",
+      "targets": [
+        ["css=.row:nth-child(1) > .col-md-8", "css:finder"],
+        ["xpath=//div[2]/div/div/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c629a761-f279-4c16-a3d7-408cb6846f74",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Aulas de Teste de Software')]", "xpath:innerText"]
+      ],
+      "value": "Aulas de Teste de Software"
+    }, {
+      "id": "8981070c-cdea-4a2e-a4f4-3d731d7b1884",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "e70968c3-a564-4d2c-a154-d8c34fceb86a",
+    "name": "TC02",
+    "commands": [{
+      "id": "557a75a7-474a-4794-9819-31fa194e9d32",
+      "comment": "",
+      "command": "open",
+      "target": "http://publicazo.insprak.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6db93f94-81c9-4d19-8afa-29f10330f8de",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1036x792",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89792e58-8305-47a5-84d3-30b8b8d3d70a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Cadastre-se",
+      "targets": [
+        ["linkText=Cadastre-se", "linkText"],
+        ["css=li:nth-child(3) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Cadastre-se')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/sign_up')]", "xpath:href"],
+        ["xpath=//li[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Cadastre-se')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7095d6fb-3ac0-48f4-b6c2-a360a79d6192",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Entrar",
+      "targets": [
+        ["linkText=Entrar", "linkText"],
+        ["css=li:nth-child(4) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Entrar')]", "xpath:link"],
+        ["xpath=//div[@id='navbar']/ul/li[4]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/sign_in')]", "xpath:href"],
+        ["xpath=//li[4]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Entrar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4cacbee5-f637-4039-b6b4-9cc49e2dab48",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "374c6700-2d47-4b2e-8414-7dd2d311b37c",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["http://publicazo.insprak.com/"],
+  "plugins": []
+}
